@@ -1,4 +1,3 @@
-const { ERR_NOT_IN_RANGE, FIND_SOURCES } = require('constants')
 const roleUpgrader = {
 
   /** @param {Creep} creep **/
