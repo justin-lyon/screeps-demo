@@ -30,9 +30,9 @@ module.exports.loop = function () {
   const energy = Game.spawns['Pekkerwood'].energy
   console.log('energy', energy)
   if (energy >= 200) {
-    if (creepCount.harvester <= creepCount.upgrader && creepCount.harvester <= creepCount.builder) {
+    if (creepCount.harvester <= 1.67 * creepCount.upgrader && creepCount.harvester <= 1.67 * creepCount.builder) {
       creepGen.createHarvester(`Harvester${creepCount.harvester}`)
-    } else if (creepCount.builder < .33*creepCount.harvester && creepCount.builder <= creepCount.upgrader) {
+    } else if (creepCount.builder < .33 * creepCount.harvester && creepCount.builder <= creepCount.upgrader) {
       creepGen.createBuilder(`Harvester${creepCount.builder}`)
     } else if (creepCount.upgrader < .33 * creepCount.harvester && creepCount.upgrader <= creepCount.builder) {
       creepGen.createUpgrader(`Harvester${creepCount.upgrader}`)
