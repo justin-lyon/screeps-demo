@@ -1,4 +1,5 @@
 const createCreep = (name, role) => {
+  console.log(`creating a new ${role} named ${name}`)
   Game.spawns['Pekkerwood'].spawnCreep([WORK, CARRY, MOVE], name, { memory: { role: role } });
 }
 
