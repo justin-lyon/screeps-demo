@@ -6,9 +6,9 @@ const roleBuilder = require('role.builder')
 
 module.exports.loop = function () {
   const creepCount = {
-    harvester: 0,
-    upgrader: 0,
-    builder: 0
+    harvester: 1,
+    upgrader: 1,
+    builder: 1
   }
 
   for (const name in Game.creeps) {
@@ -33,9 +33,9 @@ module.exports.loop = function () {
     if (creepCount.harvester <= 1.67 * creepCount.upgrader && creepCount.harvester <= 1.67 * creepCount.builder) {
       creepGen.createHarvester(`Harvester${creepCount.harvester}`)
     } else if (creepCount.builder < .33 * creepCount.harvester && creepCount.builder <= creepCount.upgrader) {
-      creepGen.createBuilder(`Harvester${creepCount.builder}`)
+      creepGen.createBuilder(`Builder${creepCount.builder}`)
     } else if (creepCount.upgrader < .33 * creepCount.harvester && creepCount.upgrader <= creepCount.builder) {
-      creepGen.createUpgrader(`Harvester${creepCount.upgrader}`)
+      creepGen.createUpgrader(`Upgrader${creepCount.upgrader}`)
     }
   }
 }
