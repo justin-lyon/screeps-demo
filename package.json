@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "screeps-api": "^1.7.2",
     "standard": "^11.0.1"
   },
   "devDependencies": {},

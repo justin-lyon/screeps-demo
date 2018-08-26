@@ -1,4 +1,5 @@
-var roleHarvester = {
+const { FIND_SOURCES, ERR_NOT_IN_RANGE, FIND_STRUCTURES, STRUCTURE_EXTENSION, STRUCTURE_SPAWN, RESOURCE_ENERGY } = require('constants')
+const roleHarvester = {
 
   /** @param {Creep} creep **/
   run: function (creep) {

@@ -1,4 +1,6 @@
-var roleBuilder = {
+const { FIND_CONSTRUCTION_SITES, ERR_NOT_IN_RANGE, FIND_SOURCES } = require('constants')
+
+const roleBuilder = {
 
   /** @param {Creep} creep **/
   run: function (creep) {
