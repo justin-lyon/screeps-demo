@@ -1,4 +1,4 @@
-const Util = require('./utils')
+import { uuid as getUuid } from './utils'
 
 const BUILDER = 'builder'
 const HARVESTER = 'harvester'
@@ -23,27 +23,21 @@ const upgraderMemory = {
 }
 
 const createCreep = (body, memory) => {
-  const uuid = Util.getUuid()
+  const uuid = getUuid()
   Game.spawns['Pekkerwood'].spawnCreep(
     body,
     uuid,
     { memory: memory });
 }
 
-const createBuilder = () => {
+export const createBuilder = () => {
   createCreep(basicBody, builderMemory)
 }
 
-const createHarvester = () => {
+export const createHarvester = () => {
   createCreep(basicBody, harvestorMemory)
 }
 
-const createUpgrader = () => {
+export const createUpgrader = () => {
   createCreep(basicBody, upgraderMemory)
-}
-
-module.exports = {
-  createBuilder,
-  createHarvester,
-  createUpgrader
 }

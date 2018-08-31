@@ -1,23 +1,24 @@
-const creepGen = require('creep.generator')
+import * as creepGen from './creep.generator'
+import roleHarvester from './role.harvester'
+import roleUpgrader from './role.upgrader'
+import roleBuilder from './role.builder'
 
-const roleHarvester = require('role.harvester')
-const roleUpgrader = require('role.upgrader')
-const roleBuilder = require('role.builder')
-
-module.exports.loop = function () {
+const loop = () => {
   for (const name in Game.creeps) {
     const creep = Game.creeps[name]
     if (creep.memory.role === 'harvester') {
-      roleHarvester.run(creep)
+      roleHarvester(creep)
     }
     if (creep.memory.role === 'upgrader') {
-      roleUpgrader.run(creep)
+      roleUpgrader(creep)
     }
     if (creep.memory.role === 'builder') {
-      roleBuilder.run(creep)
+      roleBuilder(creep)
     }
   }
 
   const energy = Game.spawns['Pekkerwood'].energy
   console.log('energy', energy)
 }
+
+export default loop

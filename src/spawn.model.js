@@ -28,7 +28,7 @@ const assignHarvester = (spawnName, sourceId, harvesterId) => {
   }
 }
 
-const initSpawn = name => {
+export default initSpawn = name => {
   const memory = {
     sources: {
       ignored: ['15ea4b69eaffd56d47c98d61'],
@@ -39,8 +39,4 @@ const initSpawn = name => {
     assignHarvester
   }
   Game.spawns[name].memory = memory
-}
-
-module.exports = {
-  initSpawn
 }
