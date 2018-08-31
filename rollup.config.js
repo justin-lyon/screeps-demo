@@ -13,7 +13,7 @@ export default {
     sourcemap: false
   },
   plugins: [
-    resolve(), // tells Rollup how to find date-fns in node_modules
-    commonjs(), // converts date-fns to ES modules
+    resolve(), // tells Rollup how to find node_modules
+    commonjs(), // converts cjs node_modules to ES modules
   ]
 };
