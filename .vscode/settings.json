@@ -1,0 +1,6 @@
+{
+  "standard.options": {
+    "globals": []
+  },
+  "standard.autoFixOnSave": true
+}
