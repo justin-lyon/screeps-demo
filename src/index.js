@@ -1,7 +1,7 @@
 import * as creepGen from './creep.generator'
-import roleHarvester from './role/role.harvester'
-import roleUpgrader from './role/role.upgrader'
-import roleBuilder from './role/role.builder'
+import roleHarvester from './role/harvester'
+import roleUpgrader from './role/upgrader'
+import roleBuilder from './role/builder'
 
 const loop = () => {
   for (const name in Game.creeps) {
