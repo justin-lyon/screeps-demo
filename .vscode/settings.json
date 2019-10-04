@@ -1,6 +1,6 @@
 {
   "standard.options": {
-    "globals": []
+    "globals": ["Game", "InterShardMemory", "Memory", "PathFinder", "RawMemory", "Constants"]
   },
   "standard.autoFixOnSave": true
 }
