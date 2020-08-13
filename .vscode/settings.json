@@ -2,5 +2,6 @@
   "standard.options": {
     "globals": ["Game", "InterShardMemory", "Memory", "PathFinder", "RawMemory", "Constants"]
   },
-  "standard.autoFixOnSave": true
+  "standard.autoFixOnSave": true,
+  "editor.defaultFormatter": "chenxsan.vscode-standardjs"
 }

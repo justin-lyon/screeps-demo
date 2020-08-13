@@ -27,5 +27,18 @@
   "bugs": {
     "url": "https://github.com/jlyon87/screeps-demo/issues"
   },
-  "homepage": "https://github.com/jlyon87/screeps-demo#readme"
+  "homepage": "https://github.com/jlyon87/screeps-demo#readme",
+  "standard": {
+    "globals": [
+      "CARRY",
+      "Constants",
+      "Game",
+      "InterShardMemory",
+      "Memory",
+      "MOVE",
+      "PathFinder",
+      "RawMemory",
+      "WORK"
+    ]
+  }
 }
