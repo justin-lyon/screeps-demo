@@ -1,10 +1,11 @@
 import { uuid as getUuid } from './utils'
+import { SPAWN_NAME } from './constants'
 
 const BUILDER = 'builder'
 const HARVESTER = 'harvester'
 const UPGRADER = 'upgrader'
 
-const basicBody = [ WORK, WORK, CARRY, MOVE ]
+const basicBody = [WORK, WORK, CARRY, MOVE]
 
 const builderMemory = {
   role: BUILDER,
@@ -24,10 +25,10 @@ const upgraderMemory = {
 
 const createCreep = (body, memory) => {
   const uuid = getUuid()
-  Game.spawns['Pekkerwood'].spawnCreep(
+  Game.spawns[SPAWN_NAME].spawnCreep(
     body,
     uuid,
-    { memory: memory });
+    { memory: memory })
 }
 
 export const createBuilder = () => {

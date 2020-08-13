@@ -1,7 +1,8 @@
-import * as creepGen from './creep.generator'
+// import * as creepGen from './creep.generator'
 import roleHarvester from './role.harvester'
 import roleUpgrader from './role.upgrader'
 import roleBuilder from './role.builder'
+import { SPAWN_NAME } from './constants'
 
 const loop = () => {
   for (const name in Game.creeps) {
@@ -17,7 +18,7 @@ const loop = () => {
     }
   }
 
-  const energy = Game.spawns['Pekkerwood'].energy
+  const energy = Game.spawns[SPAWN_NAME].energy
   console.log('energy', energy)
 }
 

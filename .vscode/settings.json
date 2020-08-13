@@ -1,6 +1,23 @@
 {
   "standard.options": {
-    "globals": ["Game", "InterShardMemory", "Memory", "PathFinder", "RawMemory", "Constants"]
+    "globals": [
+      "CARRY",
+      "Constants",
+      "ERR_NOT_IN_RANGE",
+      "FIND_CONSTRUCTION_SITES",
+      "FIND_SOURCES",
+      "FIND_STRUCTURES",
+      "Game",
+      "InterShardMemory",
+      "Memory",
+      "MOVE",
+      "PathFinder",
+      "RawMemory",
+      "RESOURCE_ENERGY",
+      "STRUCTURE_EXTENSION",
+      "STRUCTURE_SPAWN",
+      "WORK"
+    ]
   },
   "standard.autoFixOnSave": true,
   "editor.defaultFormatter": "chenxsan.vscode-standardjs"
