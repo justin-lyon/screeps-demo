@@ -4,11 +4,11 @@ import screeps from 'rollup-plugin-screeps'
 
 export default {
   input: 'src/main.js',
-  // output: {
-  //   file: 'dist/main.js',
-  //   format: 'cjs',
-  //   sourcemap: true
-  // },
+  output: {
+    file: 'dist/main.js',
+    format: 'cjs',
+    sourcemap: true
+  },
   plugins: [
     resolve(), // tells Rollup how to find node_modules
     commonjs(), // converts cjs node_modules to ES modules
